@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/jquery.js"></script>
+  <script src="js/first.js"></script>
+  <title>Tic Tac Toe</title>
+</head>
+  <body background="img/reza-rostampisheh-1383444-unsplash.jpg" onload="startGame();" align="center">
+    <!-- <div class = "background">
+      <img src= "img/reza-rostampisheh-1383444-unsplash.jpg">
+      </div> -->
+             <div id="message"> Welcome </div>
+
+        <table border="1" frame="void" align="center">
+            <tbody>
+            <tr>
+                <td id="s1" class="Square" onclick="nextMove(this);"></td>
+                <td id="s2" class="Square" onclick="nextMove(this);"></td>
+                <td id="s3" class="Square" onclick="nextMove(this);"></td>
+            </tr>
+            <tr>
+                <td id="s4" class="Square" onclick="nextMove(this);"></td>
+                <td id="s5" class="Square" onclick="nextMove(this);"></td>
+                <td id="s6" class="Square" onclick="nextMove(this);"></td>
+            </tr>
+            <tr>
+                <td id="s7" class="Square" onclick="nextMove(this);"></td>
+                <td id="s8" class="Square" onclick="nextMove(this);"></td>
+                <td id="s9" class="Square" onclick="nextMove(this);"></td>
+            </tr>
+            </tbody>
+        </table>
+        <a href="javascript:startGame();">Start again</a>
+
+        <div>
+        <!-- Cat walking GIF from: http://www.anniemation.com/clip_art/graphics.html -->
+        <img id="cat" src="https://99px.ru/sstorage/86/2017/08/image_862008170724122647718.gif">
+    </div>
+<!-- <div>
+  <img id="dog" src="http://kartinki.info/uploads/posts/2016-05/1463307896_1495.gif">
+  <div> --> 
+
+  <script>
+  var catEl = document.getElementById("cat");
+
+  var startTime = new Date().getTime();
+  var walkTheCat = function() {
+      var currTime = new Date().getTime();
+      var secondsElapsed = ((currTime - startTime)/1000);
+  };
+  walkTheCat();
+  </script>
+
+</body>
+</html>
